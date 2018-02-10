@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lista de tareas</title>
+  <title>Lista de productos</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="task-list.css">
 </head>
@@ -17,31 +17,47 @@
           <!--
           Este es el código emmet de mi contenido
           .form-group>(label+input#tarea.form-control.mb-3+button.btn.btn-succes)
-          -->
-          <div class="form-group">
-            <label for="tarea">Tarea:</label>
-            <input type="text" id="tarea" class="form-control mb-3">
-            <button class="btn btn-success">Agregar tarea</button>
+        -->
+
+        <div class="row">
+          <div class="col col-sm-8 form-group">
+            <label for="producto">Producto:</label>
+            <input type="text" id="producto" class="form-control mb-3">
           </div>
-        </form>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col col-sm-6 offset-sm-3">
+          <div class="col col-sm-4 form-group">
+            <label for="categoria">Categoría:</label>
+            <select name="categoria" id="categoria" class="form-control">
+              <option value="success">Verduras</option>
+              <option value="warning">Comida Chatarra</option>
+              <option value="info">Frutas</option>
+              <option value="secondary">Alcohol</option>
+            </select>
+          </div>
+        </div>
 
-        <ul class="list-group" id="lista-principal">
-        </ul>
+        <div class="form-group">
 
-
-
-      </div>
+          <button class="btn btn-success">Agregar producto</button>
+        </div>
+      </form>
     </div>
   </div>
+  <div class="row">
+    <div class="col col-sm-6 offset-sm-3">
+
+      <ul class="list-group" id="lista-principal">
+      </ul>
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="task-list.js"></script>
+
+    </div>
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="task-list.js"></script>
 
 </body>
 </html>
