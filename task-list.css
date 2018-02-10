@@ -1,0 +1,5 @@
+li.list-group-item{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
